@@ -1,0 +1,18 @@
+<section class="section" data-padding="compact">
+  <div class="wrapper">
+    <app-section-title color="var(--background-main)" title="portfolio component" />
+
+    <div class="grid-auto-fit" style="--grid-gap: 2rem">
+      @for (imagePath of imagePaths(); track $index) {
+      <figure (click)="onShowModal(imagePath)">
+        <img [src]="imagePath" />
+        <i class="fa-solid fa-plus"></i>
+      </figure>
+      }
+    </div>
+  </div>
+</section>
+
+<dialog closedby="any" #modal>
+  <img [src]="selectedImagePath()" />
+</dialog>

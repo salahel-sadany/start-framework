@@ -1,0 +1,31 @@
+<section class="section" data-padding="compact">
+  <div class="wrapper">
+    <app-section-title color="var(--background-main)" title="conatct section" />
+
+    <form (ngSubmit)="onSubmit()" class="flex" data-direction="column" style="--flex-gap: 2rem">
+      <div>
+        <label for="userName">userName:</label>
+        <input type="text" id="userName" placeholder="userName" />
+      </div>
+
+      <div>
+        <label for="userAge">userAge:</label>
+        <input type="text" id="userAge" placeholder="userAge" />
+      </div>
+
+      <div>
+        <label for="userEmail">userEmail:</label>
+        <input type="text" id="userEmail" placeholder="userEmail" />
+      </div>
+
+      <div>
+        <label for="userPassword">userPassword:</label>
+        <input type="text" id="userPassword" placeholder="userPassword" />
+      </div>
+
+      <div>
+        <button>send message</button>
+      </div>
+    </form>
+  </div>
+</section>
